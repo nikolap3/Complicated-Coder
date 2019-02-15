@@ -23,7 +23,7 @@ void decode()
     string cmessage="";
     string message="",msg1="",msg2="";
     ifstream fileinput;
-    fileinput.open("code.txt");
+    fileinput.open("code.pass");
     if(fileinput.is_open())
     {
         fileinput>>k>>l>>p>>cmessage;
@@ -66,5 +66,5 @@ void decode()
         cout << message << endl;
         fileinput.close();
     }
-    else cout<<"file was not opened/ couldnt be opened"<<endl;
+    else cout<<"file was not opened/couldnt be opened (check if code.txt exists)"<<endl;
 }
