@@ -80,7 +80,7 @@ void code()
     char sm[256];
     ofstream fileoutput;
     ifstream fileinput;
-    fileoutput.open("code.txt");
+    fileoutput.open("code.pass");
     srand(time(0));
     cin.get();
     cin.getline(sm,256);
